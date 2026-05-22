@@ -5,9 +5,9 @@
     --surface-soft: #fcfbfa;
     --line: rgba(15, 23, 42, 0.1);
     --line-strong: rgba(15, 23, 42, 0.16);
-    --text: #0b0f17;
-    --text-soft: rgba(11, 15, 23, 0.72);
-    --text-muted: rgba(11, 15, 23, 0.54);
+    --text: #1b1f27;
+    --text-soft: rgba(27, 31, 39, 0.74);
+    --text-muted: rgba(27, 31, 39, 0.56);
     --accent: #d97706;
     --accent-soft: rgba(217, 119, 6, 0.14);
     --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
@@ -161,9 +161,10 @@ section + section {
 
 .section-title {
     font-size: clamp(2.2rem, 3.8vw, 4.6rem);
-    line-height: 0.96;
-    letter-spacing: -0.07em;
+    line-height: 1.04;
+    letter-spacing: -0.045em;
     max-width: 12ch;
+    font-weight: 600;
 }
 
 .reveal {
@@ -299,11 +300,12 @@ section + section {
 
 .hero-title {
     font-size: clamp(3.4rem, 9vw, 7.2rem);
-    line-height: 0.96;
-    letter-spacing: -0.085em;
+    line-height: 1.02;
+    letter-spacing: -0.055em;
     max-width: 8.5ch;
     margin-top: 0.55rem;
     overflow: visible;
+    font-weight: 600;
 }
 
 .hero-subtitle {
@@ -311,6 +313,7 @@ section + section {
     margin-top: 1.15rem;
     font-size: clamp(1.02rem, 1.3vw, 1.18rem);
     color: var(--text-soft);
+    line-height: 1.68;
 }
 
 .hero-actions {
@@ -327,7 +330,7 @@ section + section {
     min-height: 3rem;
     padding: 0.82rem 1.15rem;
     border-radius: 999px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.02em;
     border: 1px solid transparent;
     transition:
@@ -359,6 +362,16 @@ section + section {
     color: var(--text);
     border-color: var(--line-strong);
     box-shadow: none;
+}
+
+.button-icon {
+    width: 1rem;
+    height: 1rem;
+    flex: 0 0 auto;
+}
+
+.cta-button .button-icon {
+    margin-right: 0.55rem;
 }
 
 .cta-secondary:hover,
@@ -493,6 +506,7 @@ section + section {
     max-width: 56ch;
     color: var(--text-soft);
     font-size: 1.03rem;
+    line-height: 1.72;
 }
 
 .about-grid {
@@ -582,8 +596,8 @@ section + section {
 
 .experience-card h3 {
     font-size: clamp(1.2rem, 2vw, 1.75rem);
-    line-height: 1.08;
-    letter-spacing: -0.05em;
+    line-height: 1.14;
+    letter-spacing: -0.03em;
 }
 
 .experience-period {
@@ -764,9 +778,10 @@ section + section {
 
 .project-card h3 {
     font-size: clamp(1.35rem, 2.7vw, 2.7rem);
-    line-height: 0.98;
-    letter-spacing: -0.07em;
+    line-height: 1.04;
+    letter-spacing: -0.045em;
     max-width: 11ch;
+    font-weight: 600;
 }
 
 .project-problem {
@@ -1009,9 +1024,10 @@ section + section {
 
 .certification-item h3 {
     font-size: clamp(1.15rem, 1.8vw, 1.55rem);
-    line-height: 1.15;
-    letter-spacing: -0.05em;
+    line-height: 1.22;
+    letter-spacing: -0.035em;
     max-width: 32ch;
+    font-weight: 600;
 }
 
 .cert-issuer {
