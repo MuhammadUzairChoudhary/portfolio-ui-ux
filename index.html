@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of Muhammad Uzair Choudhary - UI/UX Designer specializing in user-centered design and problem-solving">
-    <meta name="theme-color" content="#ffffff">
-    <title>Muhammad Uzair Choudhary - Portfolio</title>
-    
-    <!-- Inter Font -->
+    <meta name="description" content="Portfolio of Muhammad Uzair Choudhary, a Product Designer + Developer focused on modern interfaces, frontend execution, and thoughtful digital products.">
+    <meta name="theme-color" content="#090b10">
+    <title>Muhammad Uzair Choudhary - Product Designer + Developer</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header / Navigation -->
+    <div class="page-backdrop" aria-hidden="true"></div>
+    <div class="page-noise" aria-hidden="true"></div>
+
     <header class="header" id="header">
         <div class="container header-content">
-            <div class="logo">
-                <h1>Muhammad Uzair Choudhary</h1>
-                <p class="subtitle">UI/UX Designer</p>
-            </div>
-            <nav class="nav">
+            <a class="logo" href="#introduction" aria-label="Go to home">
+                <span class="logo-mark">MU</span>
+                <span class="logo-copy">
+                    <span class="logo-name">Muhammad Uzair Choudhary</span>
+                    <span class="subtitle">Product Designer + Developer</span>
+                </span>
+            </a>
+            <nav class="nav" aria-label="Primary">
                 <a href="#introduction" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Experience</a>
@@ -34,86 +37,246 @@
     </header>
 
     <main>
-        <!-- Hero / Introduction Section -->
         <section id="introduction" class="hero">
-            <div class="container">
-                <h2 class="section-title">Hello, I'm Uzair</h2>
-                <p class="hero-subtitle">I design thoughtful, user-centered digital experiences that solve real problems. With a passion for accessibility and elegant design, I create interfaces that feel natural and intuitive.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="cta-button">View Projects</a>
-                    <a href="Muhammad-Uzair-Choudhary-Resume.pdf" download class="cta-button cta-secondary">Download Resume</a>
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Product designer, frontend thinker, and systems-oriented builder</p>
+                    <h2 class="hero-title">Muhammad Uzair Choudhary</h2>
+                    <p class="hero-subtitle">I design thoughtful, user-centered digital experiences that solve real problems. With a passion for accessibility, elegant systems, and frontend implementation, I create interfaces that feel natural, technical, and polished.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="cta-button">View Projects</a>
+                        <a href="Muhammad-Uzair-Choudhary-Resume.pdf" download class="cta-button cta-secondary">Download Resume</a>
+                    </div>
+                    <ul class="hero-points" aria-label="Key strengths">
+                        <li>Product thinking</li>
+                        <li>Design systems</li>
+                        <li>Frontend execution</li>
+                    </ul>
+                </div>
+
+                <aside class="hero-panel reveal">
+                    <div class="hero-panel-card">
+                        <div class="hero-panel-head">
+                            <span class="panel-kicker">Selected profile</span>
+                            <span class="panel-chip">Open to product teams</span>
+                        </div>
+                        <div class="hero-panel-body">
+                            <p>I bridge design and implementation with a process shaped around clarity, usability, and disciplined execution.</p>
+                            <div class="hero-metrics">
+                                <div>
+                                    <strong>UX</strong>
+                                    <span>Research, flows, prototyping</span>
+                                </div>
+                                <div>
+                                    <strong>Code</strong>
+                                    <span>React, responsive UI, frontend systems</span>
+                                </div>
+                                <div>
+                                    <strong>Product</strong>
+                                    <span>Case-study framing and product polish</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-side-note">
+                        <span>Now</span>
+                        Designing and building modern product surfaces with a premium, startup-oriented feel.
+                    </div>
+                </aside>
+
+                <a href="#about" class="scroll-cue" aria-label="Scroll to about">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M12 5v14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 12l-7 7-7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="about section-block">
+            <div class="container section-split">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">About</p>
+                    <h2 class="section-title">A product-minded designer who also ships the interface.</h2>
+                </div>
+                <div class="content-card reveal">
+                    <p class="about-text">Entry-level UI/UX Designer designing user-centered mobile and web products. Skilled in user research, user flow, information architecture, wireframing, and high-fidelity prototyping using Figma. Passionate about creating intuitive, accessible digital experiences.</p>
+                    <div class="about-grid">
+                        <div class="about-tile">
+                            <span>Focus</span>
+                            <p>Product structure, visual clarity, and practical design systems.</p>
+                        </div>
+                        <div class="about-tile">
+                            <span>Approach</span>
+                            <p>Start with the user problem, then refine the system and implementation.</p>
+                        </div>
+                        <div class="about-tile">
+                            <span>Strength</span>
+                            <p>Turning strategy into interfaces that feel deliberate and ready to ship.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- About / Summary Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About</h2>
-                <p class="about-text">Entry-level UI/UX Designer designing user-centered mobile and web products. Skilled in user research, user flow, information architecture, wireframing, and high-fidelity prototyping using Figma. Passionate about creating intuitive, accessible digital experiences.</p>
-            </div>
-        </section>
+        <section id="experience" class="experience section-block">
+            <div class="container section-split">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Experience</p>
+                    <h2 class="section-title">Structured work across product design, collaboration, and frontend delivery.</h2>
+                </div>
+                <div class="timeline reveal">
+                    <div class="timeline-line" aria-hidden="true"></div>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                
-                <div class="experience-list">
-                    <!-- Experience Item 1 -->
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h3>UI/UX Design Intern</h3>
-                            <span class="experience-period">Jul 2025 - Sep 2025</span>
+                    <article class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <p class="experience-company">Aangan</p>
+                                    <h3>UI/UX Design Intern</h3>
+                                </div>
+                                <span class="experience-period">Jul 2025 - Sep 2025</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Designed both mobile and web application designs for Aangan</li>
+                                <li>Carried out user research, competitor analysis, and color palette analysis</li>
+                                <li>Utilized Figma to create user flow design, plan information architecture, wireframes, and high-fidelity prototypes</li>
+                            </ul>
                         </div>
-                        <p class="experience-company">Aangan</p>
-                        <ul class="experience-details">
-                            <li>Designed both mobile and web application designs for Aangan</li>
-                            <li>Carried out user research, competitor analysis, and color palette analysis</li>
-                            <li>Utilized Figma to create user flow design, plan information architecture, wireframes, and high-fidelity prototypes</li>
-                        </ul>
-                    </div>
+                    </article>
 
-                    <!-- Experience Item 2 -->
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h3>Freelance UI/UX Designer</h3>
-                            <span class="experience-period">Oct 2025 - Nov 2025</span>
+                    <article class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <p class="experience-company">Al-Dar Clothing (Dubai)</p>
+                                    <h3>Freelance UI/UX Designer</h3>
+                                </div>
+                                <span class="experience-period">Oct 2025 - Nov 2025</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Worked for a client in Dubai to design a web application for their clothing brand</li>
+                                <li>Dealt with client's changing specifications and communicated effectively throughout the project</li>
+                                <li>Utilized Figma for creating web design and Veo-3 for creating videos for the website</li>
+                            </ul>
                         </div>
-                        <p class="experience-company">Al-Dar Clothing (Dubai)</p>
-                        <ul class="experience-details">
-                            <li>Worked for a client in Dubai to design a web application for their clothing brand</li>
-                            <li>Dealt with client's changing specifications and communicated effectively throughout the project</li>
-                            <li>Utilized Figma for creating web design and Veo-3 for creating videos for the website</li>
-                        </ul>
-                    </div>
+                    </article>
 
-                    <!-- Experience Item 3 -->
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h3>Freelance Web Designer & Developer</h3>
-                            <span class="experience-period">Sep 2025 - Oct 2025</span>
+                    <article class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <p class="experience-company">Looks By Anum (Canada)</p>
+                                    <h3>Freelance Web Designer & Developer</h3>
+                                </div>
+                                <span class="experience-period">Sep 2025 - Oct 2025</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Worked for a client in Canada to redesign their website for better conversion</li>
+                                <li>Dealt with client's changing requirements and communicated effectively throughout the project</li>
+                                <li>Built the frontend using React.js</li>
+                            </ul>
                         </div>
-                        <p class="experience-company">Looks By Anum (Canada)</p>
-                        <ul class="experience-details">
-                            <li>Worked for a client in Canada to redesign their website for better conversion</li>
-                            <li>Dealt with client's changing requirements and communicated effectively throughout the project</li>
-                            <li>Built the frontend using React.js</li>
-                        </ul>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Selected Projects</h2>
-                
+        <section id="projects" class="projects section-block">
+            <div class="container section-split section-split-wide">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Projects</p>
+                    <h2 class="section-title">Selected work framed like product stories, not portfolio thumbnails.</h2>
+                </div>
                 <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
+                    <article class="project-card reveal" style="--project-accent:#9f7aea;">
+                        <div class="project-preview project-preview--desktop">
+                            <div class="project-preview-bar"><span></span><span></span><span></span></div>
+                            <div class="project-preview-surface">
+                                <div class="preview-chip">Landing page</div>
+                                <div class="preview-stack">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <div class="project-preview-tag">01</div>
+                        </div>
                         <div class="project-content">
+                            <div class="project-meta"><span>Figma</span><span>Prototype</span></div>
+                            <h3>Landing Page Design</h3>
+                            <p class="project-problem">Interactive landing page prototype and visual design created in Figma.</p>
+                            <div class="project-tools">
+                                <span class="tool">Figma</span>
+                                <span class="tool">Prototype</span>
+                                <span class="tool">Landing Page</span>
+                            </div>
+                            <a href="https://www.figma.com/proto/anay5YIiHtf2H7LC2qlNc4/Landing-Page-Design?page-id=0%3A1&node-id=7-64&p=f&viewport=611%2C-19%2C0.11&t=18jFnhS1jzlJ8UGQ-1&scaling=scale-down&content-scaling=fixed" target="_blank" rel="noreferrer" class="project-link">View Prototype →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--project-accent:#60a5fa;">
+                        <div class="project-preview project-preview--mobile">
+                            <div class="project-preview-bar"><span></span><span></span><span></span></div>
+                            <div class="project-preview-surface">
+                                <div class="preview-phone">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-note">Recommendations engine</div>
+                            </div>
+                            <div class="project-preview-tag">02</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta"><span>Frontend</span><span>React</span></div>
+                            <h3>Reddit Recs Frontend</h3>
+                            <p class="project-problem">Frontend implementation for a Reddit recommendations app, deployed on Vercel.</p>
+                            <div class="project-tools">
+                                <span class="tool">Frontend</span>
+                                <span class="tool">Vercel</span>
+                                <span class="tool">React</span>
+                            </div>
+                            <a href="https://reddit-recs-frontend.vercel.app/" target="_blank" rel="noreferrer" class="project-link">Live Site →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--project-accent:#34d399;">
+                        <div class="project-preview project-preview--site">
+                            <div class="project-preview-bar"><span></span><span></span><span></span></div>
+                            <div class="project-preview-surface">
+                                <div class="preview-grid">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-note">Deployment system</div>
+                            </div>
+                            <div class="project-preview-tag">03</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta"><span>Frontend</span><span>Vercel</span></div>
+                            <h3>LBA Final</h3>
+                            <p class="project-problem">Final project deployment showcasing the LBA project, hosted on Vercel.</p>
+                            <div class="project-tools">
+                                <span class="tool">Frontend</span>
+                                <span class="tool">Vercel</span>
+                                <span class="tool">Design</span>
+                            </div>
+                            <a href="https://lba-final.vercel.app/" target="_blank" rel="noreferrer" class="project-link">Live Site →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--project-accent:#f59e0b;">
+                        <div class="project-preview project-preview--dashboard">
+                            <div class="project-preview-bar"><span></span><span></span><span></span></div>
+                            <div class="project-preview-surface">
+                                <div class="preview-dashboard">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-note">Learning platform</div>
+                            </div>
+                            <div class="project-preview-tag">04</div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta"><span>Figma</span><span>Concept</span></div>
                             <h3>LMS Application Concept</h3>
                             <p class="project-problem">Designed an LMS application with several features, such as, Attendance Management, Course Management, Grading, etc.</p>
                             <div class="project-tools">
@@ -121,13 +284,23 @@
                                 <span class="tool">Prototyping</span>
                                 <span class="tool">Concept Design</span>
                             </div>
-                            <a href="https://www.figma.com/design/ctAEIEArIIUVMCVLEispd6/LMS-Application-Concept?node-id=2002-2&t=Tp2WLgw9ZxQrLfwl-1" target="_blank" class="project-link">View on Figma →</a>
+                            <a href="https://www.figma.com/design/ctAEIEArIIUVMCVLEispd6/LMS-Application-Concept?node-id=2002-2&t=Tp2WLgw9ZxQrLfwl-1" target="_blank" rel="noreferrer" class="project-link">View on Figma →</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 2 -->
-                    <div class="project-card">
+                    <article class="project-card reveal" style="--project-accent:#ef4444;">
+                        <div class="project-preview project-preview--mobile project-preview--warm">
+                            <div class="project-preview-bar"><span></span><span></span><span></span></div>
+                            <div class="project-preview-surface">
+                                <div class="preview-phone preview-phone--tall">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-note">Travel journal</div>
+                            </div>
+                            <div class="project-preview-tag">05</div>
+                        </div>
                         <div class="project-content">
+                            <div class="project-meta"><span>Figma</span><span>User flow</span></div>
                             <h3>Travel T&les</h3>
                             <p class="project-problem">A mobile-first journaling application design for travelers and tourists to record their experiences.</p>
                             <div class="project-tools">
@@ -135,39 +308,68 @@
                                 <span class="tool">User Flow</span>
                                 <span class="tool">Usability</span>
                             </div>
-                            <a href="https://www.figma.com/design/FybjaBB1B5VtGpeo7vKmhH/Travel-Tales?node-id=0-1&t=D730X56xRLGP3VF4-1" target="_blank" class="project-link">View on Figma →</a>
+                            <a href="https://www.figma.com/design/FybjaBB1B5VtGpeo7vKmhH/Travel-Tales?node-id=0-1&t=D730X56xRLGP3VF4-1" target="_blank" rel="noreferrer" class="project-link">View on Figma →</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 3 -->
-                    <div class="project-card">
+                    <article class="project-card reveal" style="--project-accent:#22c55e;">
+                        <div class="project-preview project-preview--desktop project-preview--realestate">
+                            <div class="project-preview-bar"><span></span><span></span><span></span></div>
+                            <div class="project-preview-surface">
+                                <div class="preview-chip">Real estate</div>
+                                <div class="preview-layout"></div>
+                                <div class="preview-note">Conversion-focused landing page</div>
+                            </div>
+                            <div class="project-preview-tag">06</div>
+                        </div>
                         <div class="project-content">
+                            <div class="project-meta"><span>Figma</span><span>Landing Page</span></div>
                             <h3>Re/Max Hub Landing page</h3>
                             <p class="project-problem">Designed a real-estate landing page concept for a Dubai based client.</p>
                             <div class="project-tools">
                                 <span class="tool">Figma</span>
                                 <span class="tool">Landing Page</span>
                             </div>
-                            <a href="https://www.figma.com/design/7nqNmYfa6FahxepA5CoDMp/Re-Max-Hub?node-id=0-1&t=srMeTrkbt5ICmLkB-1" target="_blank" class="project-link">View on Figma →</a>
+                            <a href="https://www.figma.com/design/7nqNmYfa6FahxepA5CoDMp/Re-Max-Hub?node-id=0-1&t=srMeTrkbt5ICmLkB-1" target="_blank" rel="noreferrer" class="project-link">View on Figma →</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 4 -->
-                    <div class="project-card">
+                    <article class="project-card reveal" style="--project-accent:#f472b6;">
+                        <div class="project-preview project-preview--editorial">
+                            <div class="project-preview-bar"><span></span><span></span><span></span></div>
+                            <div class="project-preview-surface">
+                                <div class="preview-editorial">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-note">Brand landing page</div>
+                            </div>
+                            <div class="project-preview-tag">07</div>
+                        </div>
                         <div class="project-content">
+                            <div class="project-meta"><span>Figma</span><span>Concept</span></div>
                             <h3>Al-Dar Landing Page</h3>
                             <p class="project-problem">Designed this landing page concet for a client in Dubai for his clothing brand.</p>
                             <div class="project-tools">
                                 <span class="tool">Figma</span>
                                 <span class="tool">Design Concept</span>
                             </div>
-                            <a href="https://www.figma.com/design/rznsipjIXf4B6bZzXDhKDS/Al-Dar?node-id=0-1&t=V8ZUCHr567BtyQsU-1" target="_blank" class="project-link">View on Figma →</a>
+                            <a href="https://www.figma.com/design/rznsipjIXf4B6bZzXDhKDS/Al-Dar?node-id=0-1&t=V8ZUCHr567BtyQsU-1" target="_blank" rel="noreferrer" class="project-link">View on Figma →</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 5 -->
-                    <div class="project-card">
+                    <article class="project-card reveal" style="--project-accent:#8b5cf6;">
+                        <div class="project-preview project-preview--desktop project-preview--system">
+                            <div class="project-preview-bar"><span></span><span></span><span></span></div>
+                            <div class="project-preview-surface">
+                                <div class="preview-system">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                                <div class="preview-note">Design system</div>
+                            </div>
+                            <div class="project-preview-tag">08</div>
+                        </div>
                         <div class="project-content">
+                            <div class="project-meta"><span>Figma</span><span>Interaction design</span></div>
                             <h3>Portfolio Website</h3>
                             <p class="project-problem">Professional portfolio design for UI/UX Design.</p>
                             <div class="project-tools">
@@ -175,13 +377,23 @@
                                 <span class="tool">Design System</span>
                                 <span class="tool">Interaction Design</span>
                             </div>
-                            <a href="https://www.figma.com/design/GOEjGBiCbaHCpmgbJQdeLu/Portfolio?node-id=0-1&t=8wzix7IOeqavoQsk-1" target="_blank" class="project-link">View on Figma →</a>
+                            <a href="https://www.figma.com/design/GOEjGBiCbaHCpmgbJQdeLu/Portfolio?node-id=0-1&t=8wzix7IOeqavoQsk-1" target="_blank" rel="noreferrer" class="project-link">View on Figma →</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 6 -->
-                    <div class="project-card">
+                    <article class="project-card reveal" style="--project-accent:#14b8a6;">
+                        <div class="project-preview project-preview--desktop project-preview--academic">
+                            <div class="project-preview-bar"><span></span><span></span><span></span></div>
+                            <div class="project-preview-surface">
+                                <div class="preview-academic">
+                                    <span></span><span></span>
+                                </div>
+                                <div class="preview-note">University redesign</div>
+                            </div>
+                            <div class="project-preview-tag">09</div>
+                        </div>
                         <div class="project-content">
+                            <div class="project-meta"><span>Figma</span><span>Accessibility</span></div>
                             <h3>Yale University Website Redesign</h3>
                             <p class="project-problem">Participated in a Web Design competition and redesigned the Yale University Website.</p>
                             <div class="project-tools">
@@ -189,70 +401,93 @@
                                 <span class="tool">Real-time Collaboration</span>
                                 <span class="tool">Accessibility</span>
                             </div>
-                            <a href="https://www.figma.com/design/avH8DWeOIUo4Ce7zD8rRht/Yale-University-Web-Page?node-id=0-1&t=yMAtGlI2Y5EJe4DP-1" target="_blank" class="project-link">View on Figma →</a>
+                            <a href="https://www.figma.com/design/avH8DWeOIUo4Ce7zD8rRht/Yale-University-Web-Page?node-id=0-1&t=yMAtGlI2Y5EJe4DP-1" target="_blank" rel="noreferrer" class="project-link">View on Figma →</a>
                         </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications section-block">
+            <div class="container section-split">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Certifications</p>
+                    <h2 class="section-title">Focused credentials that support both design craft and frontend understanding.</h2>
+                </div>
+                <div class="content-card reveal">
+                    <div class="certifications-list">
+                        <article class="certification-item">
+                            <div class="cert-top">
+                                <span class="cert-badge">Meta</span>
+                                <span class="cert-year">June 2025</span>
+                            </div>
+                            <h3>Introduction to Frontend Development</h3>
+                            <p class="cert-issuer">Meta</p>
+                        </article>
+
+                        <article class="certification-item">
+                            <div class="cert-top">
+                                <span class="cert-badge">Coursera</span>
+                                <span class="cert-year">January 2025</span>
+                            </div>
+                            <h3>How to Sell: An Overview of Fundamental Selling Techniques</h3>
+                            <p class="cert-issuer">Coursera</p>
+                        </article>
+
+                        <article class="certification-item">
+                            <div class="cert-top">
+                                <span class="cert-badge">Skillshare</span>
+                                <span class="cert-year">—</span>
+                            </div>
+                            <h3>How to Create Color Palettes for Web and UI Design in Figma</h3>
+                            <p class="cert-issuer"><a href="https://www.skillshare.com/en/classes/how-to-create-color-palettes-for-web-and-ui-design-in-figma/1381413214/projects?via=watch-history" target="_blank" rel="noreferrer">Skillshare</a></p>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications Section -->
-        <section id="certifications" class="certifications">
-            <div class="container">
-                <h2 class="section-title">Certifications</h2>
-                
-                <div class="certifications-list">
-                    <div class="certification-item">
-                        <h3>Introduction to Frontend Development</h3>
-                        <p class="cert-issuer">Meta</p>
-                        <p class="cert-year">June 2025</p>
-                    </div>
-
-                    <div class="certification-item">
-                        <h3>How to Sell: An Overview of Fundamental Selling Techniques</h3>
-                        <p class="cert-issuer">Coursera</p>
-                        <p class="cert-year">January 2025</p>
-                    </div>
+        <section id="contact" class="contact section-block">
+            <div class="container section-split section-split-wide">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Contact</p>
+                    <h2 class="section-title">Open to product teams, high-quality collaborations, and frontend-focused work.</h2>
                 </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                
-                <div class="contact-links">
-                    <div class="contact-group">
-                        <h3>Contact Info</h3>
-                        <ul class="contact-list">
-                            <li><a href="tel:+923367337823">+92 336 733 6823</a></li>
-                            <li><a href="mailto:uzairch3007@gmail.com">uzairch3007@gmail.com</a></li>
-                            <li>Islamabad, Pakistan</li>
-                        </ul>
+                <div class="contact-shell reveal">
+                    <div class="contact-intro-panel">
+                        <p class="contact-intro">If you're building a product that needs stronger UX, sharper visual systems, or implementation support, I’d love to talk.</p>
+                        <a href="mailto:uzairch3007@gmail.com" class="cta-button contact-cta">Start a conversation</a>
                     </div>
+                    <div class="contact-links">
+                        <div class="contact-group">
+                            <h3>Contact Info</h3>
+                            <ul class="contact-list">
+                                <li><a href="tel:+923367337823">+92 336 733 6823</a></li>
+                                <li><a href="mailto:uzairch3007@gmail.com">uzairch3007@gmail.com</a></li>
+                                <li>Islamabad, Pakistan</li>
+                            </ul>
+                        </div>
 
-                    <div class="contact-group">
-                        <h3>Social</h3>
-                        <ul class="contact-list">
-                            <li><a href="https://linkedin.com/in/muhammad-uzair-choudhary" target="_blank">LinkedIn: @muhammad-uzair-choudhary</a></li>
-                            <li><a href="https://dribbble.com/Uzair_001" target="_blank">Dribbble: @Uzair_001</a></li>
-                            <li><a href="https://medium.com/@muhammad-uzair-choudhary" target="_blank">Medium: @muhammad-uzair-choudhary</a></li>
-                            <li><a href="https://github.com/MuhammadUzairChoudhary" target="_blank">GitHub: @MuhammadUzairChoudhary</a></li>
-                        </ul>
+                        <div class="contact-group">
+                            <h3>Social</h3>
+                            <ul class="contact-list">
+                                <li><a href="https://linkedin.com/in/muhammad-uzair-choudhary" target="_blank" rel="noreferrer">LinkedIn: @muhammad-uzair-choudhary</a></li>
+                                <li><a href="https://dribbble.com/Uzair_001" target="_blank" rel="noreferrer">Dribbble: @Uzair_001</a></li>
+                                <li><a href="https://medium.com/@muhammad-uzair-choudhary" target="_blank" rel="noreferrer">Medium: @muhammad-uzair-choudhary</a></li>
+                                <li><a href="https://github.com/MuhammadUzairChoudhary" target="_blank" rel="noreferrer">GitHub: @MuhammadUzairChoudhary</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <div>
-                <p class="footer-name">Muhammad Uzair Choudhary</p>
-            </div>
-            <nav class="footer-nav">
+            <p class="footer-name">Muhammad Uzair Choudhary</p>
+            <p class="footer-copy">Product Designer + Developer focused on modern digital experiences.</p>
+            <nav class="footer-nav" aria-label="Footer">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -260,31 +495,42 @@
         </div>
     </footer>
 
-    <!-- Smooth Scrolling Script -->
     <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+        const header = document.getElementById('header');
+        const revealItems = document.querySelectorAll('.reveal');
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (event) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#') {
+                    return;
+                }
+
+                const target = document.querySelector(href);
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    event.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
-        // Header scroll effect
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -8% 0px'
         });
+
+        revealItems.forEach((item) => observer.observe(item));
+
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 40);
+        }, { passive: true });
     </script>
 </body>
 </html>
